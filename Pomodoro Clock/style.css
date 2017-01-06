@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css?family=Kalam:700|Open+Sans');
+*{  font-size: 25px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color: #4b4b4b;
+}
+.hero-text {
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    font-size: 250%;
+    text-transform:capitalize;
+    color: #ffffff;
+}
+.main-container{
+    margin: auto;
+    width: 750px;
+    height: auto;
+}
+.clock{
+    height: 80px;
+    width: 100%;
+}
+.break-length,.session-length{
+    height: 100%;
+    width: 45%;
+    display: inline-block;
+    margin: 0 17px;
+}
+#increase-break,#decrease-break,#break-length,#increase-session,#decrease-session,#session-length{
+    display: inline-table;;
+    height: 100%;
+    color: #fff;
+    vertical-align: bottom;   
+    padding-top: 25px;
+    text-align: center;
+    box-shadow: 0 0 8px 4px #000;
+    border: 2px solid #acacac;
+    transition: 0.2s;
+}
+#increase-break,#decrease-break,#increase-session,#decrease-session{
+    width: 60px;
+}
+#increase-break:hover,#decrease-break:hover,#increase-session:hover,#decrease-session:hover{
+    box-shadow: 0 0 15px 4px #000;
+    cursor: pointer;
+}
+#break-length,#session-length {
+    width: 175px;
+    height: 100%;
+    font-size: 150%;
+    padding-top: 10px;
+}
+
+#decrease-break {
+    
+}
