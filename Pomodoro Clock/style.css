@@ -10,11 +10,6 @@ body{
     min-width: 900px;
     height: 100vh;
 }
-@media only screen (max-width:200px){
-    .hero-text{
-        
-    }
-}
 .hero-text {
     text-align: center;
     font-family: 'Kalam', cursive;
