@@ -93,25 +93,4 @@ var getWeather = function(unit) {
     else{
         console.log("Can't access location");
     }
-    
-    
-
 }
-/*
-          Weather format
-          {"coord" :{"lon":77.32,"lat":28.43},
-          "weather":[{"id":501,"main":"Rain","description":"moderate rain","icon":"10n"}],
-          "base"   :"stations",
-          "main"   :{"temp":299.618,"pressure":989.05,"humidity":98,"temp_min":299.618,"temp_max":299.618,
-          "sea_level":1011.7,
-          "grnd_level":989.05},
-          "wind":{"speed":1.46,"deg":204.5},
-          "rain":{"3h":7.405},
-          "clouds":{"all":56},
-          "dt":1468506477,
-          "sys":{"message":0.0086,"country":"IN","sunrise":1468454586,"sunset":1468504201},
-          "id":1271951,
-          "name":"Faridabad",
-          "cod":200
-          }
-          */
