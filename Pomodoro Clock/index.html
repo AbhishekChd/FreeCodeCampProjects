@@ -1,36 +1,56 @@
 <html>
-    <head>
-        <title>Pomodoro Clock</title>
-        <link type="text/css" rel="stylesheet" href="style.css">
-        <link type="text/css" rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
-    </head>
-    <body>
-        <div class = "hero-text">
-            Pomodoro clock
-        </div>
-        <div class="main-container">
-            <div class="clock">
-                <div class="break-length">
-                    <span class="clock-text">Break length</span>
-                    <div>
-                        <span id="decrease-break" ><i class="fa fa-minus fa-lg" aria-hidden="true"></i></span>
-                        <span  id="break-length">2</span>
-                        <span id="increase-break"><i class="fa fa-plus fa-lg"></i></span>
-                    </div>                    
-                </div>
-                <div class="session-length">
-                    <span class="clock-text">Session length</span>
-                    <div>
-                        <span id="decrease-session"><i class="fa fa-minus fa-lg" aria-hidden="true"></i></span>
-                        <span id="session-length">25</span>
-                        <span id="increase-session"><i class="fa fa-plus fa-lg" aria-hidden="true"></i></span>
-                    </div>                    
+<head>
+    <title>Pomodoro Clock</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/b80d3d3e9e.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<main>
+    <div class="hero-text">
+        Pomodoro clock
+    </div>
+    <div class="main-container">
+        <div class="timer">
+            <div class="timer-container">
+                <div class="clock-text">Break length</div>
+                <div class="button-container">
+                    <div id="decrease-break" class="buttons" onclick="toggleLength('break','-')"><i
+                            class="fa fa-minus fa-lg" aria-hidden="true"></i></div>
+                    <div id="break-length" class="timer-text">2</div>
+                    <div id="increase-break" class="buttons" onclick="toggleLength('break','+')"><i
+                            class="fa fa-plus fa-lg"></i></div>
                 </div>
             </div>
-            <div class="timer">
-                <div></div>
-                
+            <div class="timer-container">
+                <div class="clock-text">Session length</div>
+                <div class="button-container">
+                    <div id="decrease-session" class="buttons" onclick="toggleLength('session','-')"><i
+                            class="fa fa-minus fa-lg" aria-hidden="true"></i></div>
+                    <div id="session-length" class="timer-text">25</div>
+                    <div id="increase-session" class="buttons" onclick="toggleLength('session','+')"><i
+                            class="fa fa-plus fa-lg" aria-hidden="true"></i></div>
+                </div>
             </div>
         </div>
-    </body>
+        <div class="clock" onclick="start()">
+            <div id="clock">25:00</div>
+            <div id="status">Start</div>
+        </div>
+    </div>
+</main>
+
+
+<footer id="credits">
+    <div> Made with &nbsp;<i class="fa fa-heart fa-lg" style="color:#EA4335;"></i>&nbsp; by <a
+            href="https://abhishekchd.github.io" target="_blank" class="link">&nbsp;Abhishek Chaudhary</a>&nbsp;
+    </div>
+    <div style="display:flex;flex-direction:row;align-items:center">| Find me on&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/AbhishekChd" target="_blank" style="text-decoration:none;"><i
+                class="fa fa-github fa-3x social" style="background-color:#fff;color:#24292e;"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/abhishek-chd" target="_blank" style="text-decoration:none;"><i
+                class="fa fa-linkedin fa-3x social" style="background-color:#0077b5;color:#fff"></i></a></div>
+
+</footer>
+</body>
 </html><!--
