@@ -4,18 +4,16 @@
 <head>
   <title>Weather app | Abhishek Chaudhary</title>
     <link type="text/css" rel="stylesheet" href="style.css">
-    <link type="text/css" rel="stylesheet" href="http://bootswatch.com/readable/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="http://bootswatch.com/3/readable/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </head>
 
-<body onload="findWeather()">
+<body>
   <!-- Modal -->
   <div id="myModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
-
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
@@ -32,43 +30,35 @@
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
-
     </div>
   </div>
   <!--end of modal========================-->
-  <div class="container-fluid">
 
+  <div class="container-fluid">
     <div class="rows" id="weather-box">
       <div class="text-center text-primary header">Weather App</div>
       <div class="btn-group btn-group-justified">
+        <!--               TODO: Remove onclicks-->
         <a href="#" class="btn btn-primary" id="ButtonC" onclick="toCelsius()">Celsius (&#8451;)</a>
-        <a href="#" class="btn btn-default" id="ButtonF" onclick="toFahrenheit()">Fahrenheit (&#8457;)</a>
-        <!--<a href="#" class="btn btn-info" data-toggle="modal" data-target="#myModal">Details</a>-->
-      </div><br/>
-      <div class="well text-center" id="weather">
-        Clear
+        <!--                 <a href="#" class="btn btn-default" id="ButtonF" onclick="toFahrenheit()">Fahrenheit (&#8457;)</a> -->
+        <a href="#" class="btn btn-warning btn-lg  btn-block" data-toggle="modal" data-target="#myModal" style="max-width:830px; min-width:255px;margin:auto;">Details</a>
       </div>
-      <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 well">
-        <span id="temp-main">40</span><span style="float:right;" class="unit">(&#8451;)</span>
-      </div>
-      <div class="col-xs-12 col-sm-offset-4 col-sm-4 col-md-3 col-md-offset-6 col-lg-offset-6 col-lg-3 well">
-        <div>
-          <span id="temp-min">30</span>
-          <span style="float:right;" class="unit">(&#8451;)</span>
+      <div class="rows">
+        <div class="text-center col-md-12">
+          <h3>Temperature :&#09;&#09;<span class="" id="temp-main">&#8451;</span></h3>
+          <h4 id="weather"></h4><span id=icon><img src="" alt=""></span>
         </div>
-        <div>
-          <span id="temp-max">45</span>
-          <span style="float:right;" class="unit">(&#8451;)</span>
-        </div>
-      </div>
+        <div class="col-md-6">
 
+          <h4></h4>
+        </div>
+      </div>
     </div>
-    <br/>
-    <a  class="btn btn-warning btn-lg  btn-block" data-toggle="modal" data-target="#myModal" style="max-width:830px; min-width:255px;margin:auto;">Details</a>
-    <!--<button class="btn btn-lg btn-block btn-warning" onclick="findWeather()" style="max-width:830px; min-width:255px;margin:auto;">Find Weather</button>-->
   </div>
-  <div class="text-center footer"> Designed and devloped by <b><a target="_blank" href="https://www.freecodecamp.com/abhishekchd">Abhishek Chaudhary.</a></b><br/>
-    <i class="fa fa-copyright"></i><b><a href="http://codepen.io/ace_Abhishek/full/OXXBVj" target="_blank">Mystiko Studio.</a></b> All rights reserved.</div>
+
+  <div class="text-center footer"> Designed and devloped by <b><a target="_blank" href="https://codepen.io/ace_Abhishek/full/OXXBVj">Abhishek
+        Chaudhary.</a></b><br />
+    <i class="fa fa-copyright"></i><b></b> All rights reserved.</div>
 </body>
 
 </html>
