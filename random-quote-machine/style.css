@@ -1,0 +1,41 @@
+.quote_box {
+    margin-top: 2.5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 10px 10px 1px 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-width: 1px;
+    width: 90%;
+    border-radius: 0.8%;
+    min-width: 200px;
+    max-width:600px
+}
+
+body {
+    background-image: url("https://raw.githubusercontent.com/AbhishekChd/FreeCodeCampProjects/master/images/Random-quote-machine-background.jpg");
+    margin: 15px 0 0 0;
+    padding: 10px 0 0 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#quote {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+}
+
+#author {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+}
+
+.credits {
+    postion:absolute;
+    bottom:0;
+    z-index:-1 !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15em;
+}
