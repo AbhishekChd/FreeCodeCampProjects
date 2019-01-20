@@ -1,0 +1,54 @@
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    font-size: 3.3em;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.jumbotron {
+    max-width: 760px;
+    min-width: 315px;
+    margin: auto;
+}
+
+#search {
+    border-right: 1px solid white;
+}
+
+.mini {
+    text-decoration: none;
+}
+
+.title {
+    font-size: 1.2em;
+}
+
+th {
+    font-size: 1.8em;;
+}
+
+.container-fluid {
+    flex: 1 0 auto;
+}
+
+.credits {
+    margin-top: 20px;
+    flex-shrink: 0;
+    padding: 20px 0 20px 0;
+    color: #FFFFFF;
+    background-color: rgba(34, 39, 39, 0.9);
+    font-size: 1.15em;
+}
+
+.fa-heart {
+    color: red;
+}
