@@ -73,6 +73,6 @@ footer {
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 1;
-    width: 20%;
+    width: 210px;
     margin: auto;
 }
