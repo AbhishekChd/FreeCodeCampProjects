@@ -45,5 +45,9 @@ body {
     flex-shrink: 0;
     padding: 20px 0 20px 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.15em;
+    font-size: 1.2em;
+}
+
+.fa-heart{
+    color: red;
 }
