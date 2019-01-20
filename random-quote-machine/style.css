@@ -1,18 +1,21 @@
 .quote_box {
-    margin-top: 2.5%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+    margin: 2.5% auto 20px;
     padding: 10px 10px 1px 10px;
     background-color: rgba(255, 255, 255, 0.7);
     border-width: 1px;
     width: 90%;
     border-radius: 0.8%;
     min-width: 200px;
-    max-width:600px
+    max-width: 600px
+}
+
+html, body {
+    min-height: 100vh;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-image: url("https://raw.githubusercontent.com/AbhishekChd/FreeCodeCampProjects/master/images/Random-quote-machine-background.jpg");
     margin: 15px 0 0 0;
     padding: 10px 0 0 0;
@@ -27,15 +30,20 @@ body {
     font-size: 3em;
 }
 
+.container {
+    flex: 1 0 auto;
+}
+
 #author {
     font-family: 'Roboto', sans-serif;
     font-size: 1.3em;
 }
 
 .credits {
-    postion:absolute;
-    bottom:0;
-    z-index:-1 !important;
+    color: #FFFFFF;
+    background-color: rgba(34, 39, 43, 0.85);
+    flex-shrink: 0;
+    padding: 20px 0 20px 0;
     font-family: 'Roboto', sans-serif;
     font-size: 1.15em;
 }
