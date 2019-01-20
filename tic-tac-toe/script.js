@@ -58,7 +58,7 @@ function showWinner(winner) {
 }
 
 function renderSquare(index) {
-    const val = state.squares[index] ? state.squares[index] : '';
+    const val = state.squares[index] ? state.squares[index] : '&nbsp;';
     return `<div value=${index} class="box col-lg-4 col-md-4 col-sm-4 col-xs-4" onclick="boxClick(${index})">${val}</div>`;
 }
 

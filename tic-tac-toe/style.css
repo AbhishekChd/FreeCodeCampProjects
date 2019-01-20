@@ -41,12 +41,17 @@ footer {
     font-family: 'Permanent Marker', cursive;
     background-color: #ebebeb;
     font-size: 500%;
-    width: 140px;
-    height: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 0.5px solid #585858;
+}
+
+@media only screen and (max-width: 480px) {
+    .main-box {
+        width: 100%;
+        min-width: 340px;
+    }
 }
 
 .controls {
